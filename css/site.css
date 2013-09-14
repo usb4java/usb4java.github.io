@@ -1,0 +1,18 @@
+#bannerRight img
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+#breadcrumbs
+{
+    padding-right: 150px;
+}
+
+a.externalLink
+{
+    background: none !important;
+    padding-right: 0 !important;
+}
