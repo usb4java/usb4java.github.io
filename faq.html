@@ -165,7 +165,7 @@
 <pre>  SUBSYSTEM==&quot;usb&quot;,ATTR{idVendor}==&quot;89ab&quot;,ATTR{idProduct}==&quot;4567&quot;,MODE=&quot;0660&quot;,GROUP=&quot;wheel&quot;</pre></div>
 <p>This means that whenever a USB device with vendor id <i>0x89ab</i> and product id <i>0x4567</i> is attached then the group <i>wheel</i> is permitted to write to the device. So make sure your user is in that group (or use a different group).</p>
 <p>If your device uses a shared vendor/product id then you might want to filter for the manufacturer and product name. This can be done by checking the ATTR properties
-<i>manufacturerr</i> and <i>product</i>.</p>
+<i>manufacturer</i> and <i>product</i>.</p>
 <p>To activate this new configuration you may need to re-attach the USB device or run the command <tt>udevadm trigger</tt>.</p></div>
 <div class="section">
 <h3>I can't open my USB device on Windows. Why?<a name="I_cant_open_my_USB_device_on_Windows._Why"></a></h3>
