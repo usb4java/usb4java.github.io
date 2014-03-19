@@ -1,5 +1,1 @@
-de.ailis.usb4java
-de.ailis.usb4java.adapter
-de.ailis.usb4java.descriptors
-de.ailis.usb4java.libusb
-de.ailis.usb4java.utils
+org.usb4java
