@@ -74,7 +74,7 @@
 <p>On Linux you need write permissions on the device file of the USB device you want to communicate with. Check if the devices are accessible when running your program as root. If this works then it is recommended to configure <i>udev</i> to give your user write permissions when the device is attached. You can do this by creating a file like <i>/etc/udev/rules.d/99-userusbdevices.rules</i> with content like this:</p>
 <div>
 <pre>  SUBSYSTEM==&quot;usb&quot;,ATTR{idVendor}==&quot;89ab&quot;,ATTR{idProduct}==&quot;4567&quot;,MODE=&quot;0660&quot;,GROUP=&quot;plugdev&quot;</pre></div>
-<p>This means that whenever a USB device with vendor id <i>0x89ab</i> and product id <i>0x4567</i> is attached then the group <i>wheel</i> is permitted to write to the device. So make sure your user is in that group (or use a different group).</p>
+<p>This means that whenever a USB device with vendor id <i>0x89ab</i> and product id <i>0x4567</i> is attached then the group <i>plugdev</i> is permitted to write to the device. So make sure your user is in that group (or use a different group).</p>
 <p>If your device uses a shared vendor/product id then you might want to filter for the manufacturer and product name. This can be done by checking the ATTR properties <i>manufacturer</i> and <i>product</i>.</p>
 <p>To activate this new configuration you may need to re-attach the USB device or run the command <tt>udevadm trigger</tt>.</p></div>
 <div class="section">
